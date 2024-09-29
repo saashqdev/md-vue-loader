@@ -1,0 +1,63 @@
+{
+  "name": "@saashqdev/md-vue-loader",
+  "version": "1.4.0",
+  "author": "Kubeworkz <kubeworkz@gmail.com>",
+  "contributors": [
+    "saashqdev@gmail.com"
+  ],
+  "description": "Webpack loader for converting Markdown files to alive Vue components.",
+  "scripts": {
+    "test": "webpack-cli --config test/webpack.config.js",
+    "test:dev": "webpack-dev-server --content-base test/ --config test/webpack.config.js --open",
+    "test:options": "webpack-cli --config test/webpack.config.options.js",
+    "test:plugins": "webpack-cli --config test/webpack.config.plugins.js"
+  },
+  "main": "index.js",
+  "repository": "saashqdev/md-vue-loader",
+  "bugs": {
+    "url": "http://github.com/saashqdev/md-vue-loader/issues"
+  },
+  "keywords": [
+    "markdown",
+    "vue",
+    "webpack",
+    "loader"
+  ],
+  "license": "MIT",
+  "tags": [
+    "markdown",
+    "vue",
+    "webpack",
+    "loader"
+  ],
+  "dependencies": {
+    "hash-sum": "^1.0.2",
+    "highlight.js": "^9.12.0",
+    "loader-utils": "^1.1.0",
+    "lru-cache": "^5.1.1",
+    "markdown-it": "^9.1.0"
+  },
+  "devDependencies": {
+    "husky": "^3.0.4",
+    "kubevue-hooks": "^0.3.0",
+    "cache-loader": "^4.0.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^5.12.0",
+    "eslint-config-kubevue": "^3.0.2",
+    "markdown-it-for-inline": "^0.1.1",
+    "markdown-it-task-lists": "^2.1.1",
+    "raw-loader": "^0.5.1",
+    "vue": "^2.5.22",
+    "vue-loader": "^15.5.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.22",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node node_modules/kubevue-hooks/pre-commit"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "extends": "kubevue",
+    "env": {
+        "commonjs": true,
+        "node": true,
+        "mocha": true
+    }
+}
